@@ -5,17 +5,17 @@ import streamlit as st
 # ------------------------------------------------- Sidebar
 
 st.sidebar.image("logo.png")
-st.sidebar.title('Mateus Motors')
+st.sidebar.title('lobinho Motors')
 
 
-carros = ['BMW','Mustang', 'Porsche', 'Fusca', 'Toro']
+carros = ['BMW','porsche', 'ferrari', 'mclaren', 'lamborghini']
 
 opcao = st.sidebar.selectbox('Escolha o carro que foi alugado', carros)
 
 
 
 # ----------------------------------------------- Principal 
-st.title('Mateus motors - Aluguel de Carros')
+st.title('lobinho motors - Aluguel de Carros')
 
 st.image(f'{opcao}.png')
 st.markdown(f'## Você alugou o modelo: {opcao}')
@@ -27,16 +27,16 @@ km = st.text_input(f'Quantos km você rodou com o {opcao}?')
 if opcao == 'BMW':
     diaria = 450
 
-elif opcao == 'Mustang':
+elif opcao == 'porsche':
     diaria = 500
 
-elif opcao == 'Porsche':
+elif opcao == 'ferrari':
     diaria = 300
 
-elif opcao == 'Fusca':
+elif opcao == 'mclaren':
     diaria = 250
 
-elif opcao == 'Toro':
+elif opcao == 'lamborghini':
     diaria = 550
 
 
